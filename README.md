@@ -12,7 +12,7 @@ Please refer to our video for a high level introduction of this work: https://ww
                    for Road-Object Segmentation from a LiDAR Point Cloud},
       author    = {Bichen Wu, Xuanyu Zhou, Sicheng Zhao, Xiangyu Yue and Kurt Keutzer},
       journal   = {ICRA},
-      year      = {2018},
+      year      = {2019},
     }
     
 ## License

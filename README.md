@@ -8,13 +8,9 @@ This repository contains a tensorflow implementation of SqueezeSegV2, an improve
 Please refer to our video for a high level introduction of this work: https://www.youtube.com/watch?v=ZitFO1_YpNM. For more details, please refer to our paper: https://arxiv.org/abs/1809.08495. If you find this work useful for your research, please consider citing:
 
     @article{DBLP:journals/corr/abs-1809-08495,
-      author    = {Bichen Wu and
-                   Xuanyu Zhou and
-                   Sicheng Zhao and
-                   Xiangyu Yue and
-                   Kurt Keutzer},
       title     = {SqueezeSegV2: Improved Model Structure and Unsupervised Domain Adaptation
                    for Road-Object Segmentation from a LiDAR Point Cloud},
+      author    = {Bichen Wu, Xuanyu Zhou, Sicheng Zhao, Xiangyu Yue and Kurt Keutzer},
       journal   = {ICRA},
       year      = {2019},
     }

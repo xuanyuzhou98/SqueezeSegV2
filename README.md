@@ -43,6 +43,14 @@ The instructions are tested on Ubuntu 16.04 with python 2.7 and tensorflow 1.4 w
     pip install -r requirements.txt
     ```
 
+## Demo:
+- To run the demo script:
+  ```Shell
+  cd $SQSG_ROOT/
+  python ./src/demo.py
+  ```
+  If the installation is correct, the detector should write the detection results as well as 2D label maps to `$SQSG_ROOT/data/samples_out`. Here are examples of the output label map overlaped with the projected LiDAR signal. Green masks indicate clusters corresponding to cars and blue masks indicate cyclists.
+
 ## Training/Validation
 - First, download training and validation data (3.9 GB) from this [link](https://www.dropbox.com/s/pnzgcitvppmwfuf/lidar_2d.tgz?dl=0). This dataset contains LiDAR point-cloud projected to a 2D spherical surface. Refer to our paper for details of the data conversion procedure. This dataset is converted from [KITTI](http://www.cvlibs.net/datasets/kitti/) raw dataset and is distrubited under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
     ```Shell

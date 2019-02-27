@@ -45,7 +45,7 @@ class SqueezeSeg(ModelSkeleton):
             self.lidar_input, 'conv1', 'bias', 'scale',
             filters=64, size=3, stride=2, padding='SAME', freeze=False,
             conv_with_bias=True, stddev=0.001)
-    self.ca1 = self._context_aggregation_layer('ca1', self.conv1)
+    self.ca1 = self._context_aggregation_layer('se1', self.conv1)
 
     self.conv1_skip = self._conv_bn_layer(
             self.lidar_input, 'conv1_skip', 'bias', 'scale',
@@ -56,10 +56,10 @@ class SqueezeSeg(ModelSkeleton):
         'pool1', self.ca1, size=3, stride=2, padding='SAME')
     fire2 = self._fire_layer(
         'fire2', pool1, s1x1=16, e1x1=64, e3x3=64, freeze=False)
-    ca2 = self._context_aggregation_layer('ca2', fire2)
+    ca2 = self._context_aggregation_layer('se2', fire2)
     fire3 = self._fire_layer(
         'fire3', ca2, s1x1=16, e1x1=64, e3x3=64, freeze=False)
-    self.ca3 = self._context_aggregation_layer('ca3', fire3)
+    self.ca3 = self._context_aggregation_layer('se3', fire3)
     pool3 = self._pooling_layer(
         'pool3', self.ca3, size=3, stride=2, padding='SAME')
   

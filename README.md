@@ -20,7 +20,7 @@ Please refer to our video for a high level introduction of this work: https://ww
 
 ## Installation:
 
-The instructions are tested on Ubuntu 16.04 with python 2.7 and tensorflow 1.0 with GPU support. 
+The instructions are tested on Ubuntu 16.04 with python 2.7 and tensorflow 1.4 with GPU support. 
 - Clone the SqueezeSeg repository:
     ```Shell
     git clone https://github.com/xuanyuzhou98/SqueezeSegV2.git

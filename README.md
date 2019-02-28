@@ -5,7 +5,7 @@ By Bichen Wu, Xuanyu Zhou, Sicheng Zhao, Xiangyu Yue, Kurt Keutzer (UC Berkeley)
 This repository contains a tensorflow implementation of SqueezeSegV2, an improved convolutional neural network model for LiDAR segmentation and unsupervised domain adaptation for road-object segmentation from a LiDAR point cloud. 
 
 
-Please refer to our video for a high level introduction of this work: https://www.youtube.com/watch?v=ZitFO1_YpNM. For more details, please refer to our SqueezeSegV2 paper: https://arxiv.org/abs/1809.08495. If you want to learn more about SqueezeSegV1, please refer to our paper: https://arxiv.org/abs/1710.07368. If you find this work useful for your research, please consider citing:
+Please refer to our video for a high level introduction of this work: https://www.youtube.com/watch?v=ZitFO1_YpNM. For more details, please refer to our SqueezeSegV2 paper: https://arxiv.org/abs/1809.08495. If you find this work useful for your research, please consider citing:
 
     @article{DBLP:journals/corr/abs-1809-08495,
       title     = {SqueezeSegV2: Improved Model Structure and Unsupervised Domain Adaptation
@@ -13,6 +13,12 @@ Please refer to our video for a high level introduction of this work: https://ww
       author    = {Bichen Wu, Xuanyu Zhou, Sicheng Zhao, Xiangyu Yue and Kurt Keutzer},
       journal   = {ICRA},
       year      = {2019},
+    }
+    @article{wu2017squeezeseg,
+        title={Squeezeseg: Convolutional neural nets with recurrent crf for real-time road-object segmentation from 3d lidar point cloud},
+        author={Wu, Bichen and Wan, Alvin and Yue, Xiangyu and Keutzer, Kurt},
+        journal={arXiv preprint arXiv:1710.07368},
+        year={2017}
     }
     
 ## License

@@ -7,19 +7,19 @@ This repository contains a tensorflow implementation of SqueezeSegV2, an improve
 
 Please refer to our video for a high level introduction of this work: https://www.youtube.com/watch?v=ZitFO1_YpNM. For more details, please refer to our SqueezeSegV2 paper: https://arxiv.org/abs/1809.08495. If you find this work useful for your research, please consider citing:
 
-     @article{DBLP:journals/corr/abs-1809-08495,
-        title     = {SqueezeSegV2: Improved Model Structure and Unsupervised Domain Adaptation
-                     for Road-Object Segmentation from a LiDAR Point Cloud},
-        author    = {Bichen Wu, Xuanyu Zhou, Sicheng Zhao, Xiangyu Yue and Kurt Keutzer},
-        journal   = {ICRA},
-        year      = {2019},
-    }
-    @article{wu2017squeezeseg,
-        title={Squeezeseg: Convolutional neural nets with recurrent crf for real-time road-object segmentation from 3d lidar point cloud},
-        author={Wu, Bichen and Wan, Alvin and Yue, Xiangyu and Keutzer, Kurt},
-        journal={arXiv preprint arXiv:1710.07368},
-        year={2017}
-    }
+     @inproceedings{wu2018squeezesegv2,
+       title={SqueezeSegV2: Improved Model Structure and Unsupervised Domain Adaptation
+       for Road-Object Segmentation from a LiDAR Point Cloud},
+       author={Wu, Bichen and Zhou, Xuanyu and Zhao, Sicheng and Yue, Xiangyu and Keutzer, Kurt},
+       booktitle={ICRA},
+       year={2019},
+     }
+    @inproceedings{wu2017squeezeseg,
+       title={Squeezeseg: Convolutional neural nets with recurrent crf for real-time road-object segmentation from 3d lidar point cloud},
+       author={Wu, Bichen and Wan, Alvin and Yue, Xiangyu and Keutzer, Kurt},
+       booktitle={ICRA}, 
+       year={2018}
+     }
     
 ## License
 **SqueezeSegV2** is released under the BSD license (See [LICENSE](https://github.com/xuanyuzhou98/SqueezeSegV2/blob/master/LICENSE) for details). The **dataset** used for training, evaluation, and demostration of SqueezeSegV2 is modified from [KITTI](http://www.cvlibs.net/datasets/kitti/) raw dataset. For your convenience, we provide links to download the converted dataset, which is distrubited under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/).

@@ -13,7 +13,7 @@ class kitti(imdb):
     imdb.__init__(self, 'kitti_'+image_set, mc)
     self._image_set = image_set
     self._data_root_path = data_path
-    self._lidar_2d_path = os.path.join(self._data_root_path, 'lidar_2d_original')
+    self._lidar_2d_path = os.path.join(self._data_root_path, 'lidar_2d')
 
     # a list of string indices of images in the directory
     self._image_idx = self._load_image_set_idx() 

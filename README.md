@@ -20,6 +20,14 @@ Please refer to our video for a high level introduction of this work: https://ww
        booktitle={ICRA}, 
        year={2018}
      }
+     @inproceedings{yue2018lidar,
+       title={A lidar point cloud generator: from a virtual world to autonomous driving},
+       author={Yue, Xiangyu and Wu, Bichen and Seshia, Sanjit A and Keutzer, Kurt and Sangiovanni-Vincentelli, Alberto L},
+       booktitle={ICMR},
+       pages={458--464},
+       year={2018},
+       organization={ACM}
+     }
     
 ## License
 **SqueezeSegV2** is released under the BSD license (See [LICENSE](https://github.com/xuanyuzhou98/SqueezeSegV2/blob/master/LICENSE) for details). The **dataset** used for training, evaluation, and demostration of SqueezeSegV2 is modified from [KITTI](http://www.cvlibs.net/datasets/kitti/) raw dataset. For your convenience, we provide links to download the converted dataset, which is distrubited under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/).

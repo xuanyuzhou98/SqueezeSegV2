@@ -73,7 +73,7 @@ The instructions are tested on Ubuntu 16.04 with python 2.7 and tensorflow 1.4 w
     tar -xzvf lidar_2d.tgz
     rm lidar_2d.tgz
     ```
-- For synthetic dataset, you can fill out the request for the dataset through this [link](https://docs.google.com/forms/d/1o_Am34aWQiZXoEmn13zPTjOfhQah7lPCCef6VXdZ8kQ/edit). The dataset contains the synthetic LiDAR point-cloud projected to a 2D spherical surface. Refer to our paper for details of the dataset. This dataset is distrubited under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+- For synthetic dataset, you can fill out the request for the dataset through this [link](https://docs.google.com/forms/d/1o_Am34aWQiZXoEmn13zPTjOfhQah7lPCCef6VXdZ8kQ/edit). The dataset contains the synthetic LiDAR point-cloud projected to a 2D spherical surface. Refer to our paper for details of the dataset. This dataset is distributed under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 ## Training/Validation
 - Now we can start training by

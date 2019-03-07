@@ -128,53 +128,9 @@ class KITTINode(object):
         # cloud = np.stack((x, y, z, i, label))
         cloud = np.stack((x, y, z, i))
 
-        # label = record[:, :, 5]     # point-wise label
-        # label = _normalize(label)
-        # g=p*R+q*G+t*B, where p=0.2989,q=0.5870,t=0.1140
-        # p = 0.2989;q = 0.5870;t = 0.1140
-        # label_3d = np.dstack((p*label, q*label, t*label))
-        # label_3d = np.zeros((label.shape[0], label.shape[1], 3))
-        # label_3d[np.where(label==0)] = [1., 1., 1.]
-        # label_3d[np.where(label==1)] = [0., 1., 0.]
-        # label_3d[np.where(label==2)] = [1., 1., 0.]
-        # label_3d[np.where(label==3)] = [0., 1., 1.]
-        # print label_3d
-        # print np.min(label)
-        # print np.max(label)
-
-        # insert label into lidar infos
-        # lidar[np.where(label==1)] = [0., 1., 0., 0., 0.]
-        # lidar[np.where(label==2)] = [1., 1., 0., 0., 0.]
-        # lidar[np.where(label==3)] = [0., 1., 1., 0., 0.]
-        # generated feature map from LiDAR data
-        ##x/y/z
-        # feature_map = Image.fromarray(
-        #     (255 * _normalize(lidar[:, :, 0])).astype(np.uint8))
-        ##depth map
-        # feature_map = Image.fromarray(
-        #     (255 * _normalize(lidar[:, :, 4])).astype(np.uint8))
-        ##intensity map
-        # feature_map = Image.fromarray(
-        #     (255 * _normalize(lidar[:, :, 3])).astype(np.uint8))
-        # feature_map = Image.fromarray(
-        #     (255 * _normalize(lidar[:, :, :3])).astype(np.uint8))
-        # generated label map from LiDAR data
-        # label_map = Image.fromarray(
-        #     (255 * _normalize(label_3d)).astype(np.uint8))
-
-        # msg_points = pc2.create_cloud(header=header,
-        #                                fields=_make_point_field(cloud.shape[0]),
-        #                                points=cloud.T)
         msg_points = pc2.create_cloud(header=header, fields=_make_point_field(cloud.shape[0]), points=cloud.T)
-        # msg_points.header = header
-        # msg_feature = ImageConverter.to_ros(feature_map)
-        # msg_feature.header = header
-        # msg_label = ImageConverter.to_ros(label_map)
-        # msg_label.header = header
 
         self._velodyne_points_pub.publish(msg_points)
-        # self._feature_map_pub.publish(msg_feature)
-        # self._label_map_pub.publish(msg_label)
 
         file_name = bin_file.strip('.bin').split('/')[-1]
         rospy.loginfo("%s published.", file_name)

@@ -96,5 +96,5 @@ The instructions are tested on Ubuntu 16.04 with python 2.7 and tensorflow 1.4 w
     Tensorboard displays information such as training loss, evaluation accuracy, visualization of detection results in the training process, which are helpful for debugging and tunning models
 
 
-##Visu
-![](/home/kx/project/3D/SqueezeSegV2/SqueezeSegV2_visu_demo.png) 
+## Visu
+![](./SqueezeSegV2_visu_demo.png) 

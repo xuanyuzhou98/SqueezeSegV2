@@ -194,7 +194,7 @@ def evaluate():
     saver = tf.train.Saver(model.model_params)
 
     summary_writer = tf.summary.FileWriter(FLAGS.eval_dir, g)
-    
+    ckpts = set()
     while True:
       if FLAGS.run_once:
         # When run_once is true, checkpoint_path should point to the exact
